@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,500&display=swap');
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  /*NAV*/
+nav {
+    background-color: #E60012;
+}
+nav ul{
+color: aliceblue;
+}
+nav svg{
+    color: aliceblue;
+}
+/*MAIN INDEX*/
+.cardIndex {
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #f8f8f8;
+    color: #333
+}
+.cardIndex:hover {
+ transform: scale(1.05);
+}
+.botonRojo:hover {
+    background-color: #0058fc;
+    border: none;
+}
+.card-column {
+  display: flex;
+  flex-direction: column;
+}
+.align-items-stretch .card {
+  height: 100%;
+}
+/* NOVEDADES */
+
+#mainH1{
+    padding: 2rem;
+    font-size: 40px;
+    color: #303030;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+
+#filternews{
+    padding: 2rem;
+    margin-top: 6rem;
+}
+
+#filternews h2{
+    font-size: medium;
+    font-weight: 800;
+    display: inline;
+}
+
+#filternews button{
+    padding: 6px;
+    margin: 1rem;
+    font-weight: 600;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    border: 1px solid #E60012;
+    border-radius: 50px;
+    transition: background-color 0.20s;
+}
+
+#filternews button:hover{
+    background-color: #e6001336;
+}
+
+#gridNews{
+    margin: 1rem;
+}
+
+#gridNews article{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gridNews__card h3{
+    font-weight: 600;
+}
+
+.gridNews__card {
+    width: 520px;
+    background-color: rgba(48, 48, 48, 0.029);
+    border: 3px solid #ffffff31;
+    color: rgb(0, 0, 0);
+}
+
+.gridNews__card img{
+    width: 100%; 
+    padding: 0.5rem;
+}
+
+.gridNews__card__containerButton{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#gridNews button{
+    all: unset;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #4d4b4b13;
+    color: #E60012;
+    cursor: pointer;
+    transition: background-color 0.20s;
+}
+
+
+#gridNews button:hover{
+    background-color: #4d4b4b2f;
+}
+
+#gridNewsSmall button{
+    all: unset;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #4d4b4b13;
+    color: #E60012;
+    cursor: pointer;
+    transition: background-color 0.20s;
+}
+
+#gridNewsSmall button:hover{
+    background-color: #4d4b4b2f;
+}
+
+
+#gridNewsSmall{
+    margin: 1rem;
+}
+
+#gridNewsSmall article{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gridNewsSmall__card{
+    width: 250px;
+    background-color: rgba(48, 48, 48, 0.028);
+    border: 3px solid #ffffff2f;
+    color: rgb(0, 0, 0)
+}
+
+.gridNewsSmall__card img{
+    width: 100%; 
+    padding: 0.5rem;
+}
+
+.gridNewsSmall__card__containerButton{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.showMoreButtonDiv{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    margin: 2rem;
+}
+
+.showMoreButtonDiv button{  
+    all: unset;
+    margin: 1rem;
+    padding: 2rem;
+    font-weight: 600;
+    font-size: 20px;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    border: 1px solid #E60012;
+    border-radius: 50px;
+    transition: background-color 0.20s;
+}
+
+.showMoreButtonDiv button:hover {
+    background-color: #e6001336;
+}
+
+/* PAGINA JUEGOS */
+
+/* Imagen Logo Tienda*/
+
+#logoTienda {
+  object-fit: cover;
+  align-items: center;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Carrousel */
+
+.slideTitle {
+  color: #0b0b0b;
+  font-weight: 800;
+  font-size: 50px;
+}
+
+/* Cards */
+
+.card--juegos .img-fit {
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
+.card--juegos {
+  height: 100%;
+  border-radius: 6px;
+  box-shadow: 0px 1px 10px #00000033;
+  cursor: default;
+  transition: all 400ms ease;
+}
+
+.card--juegos:hover {
+  box-shadow: 5px 5px 20px #00000066;
+  transform: translateY(-3%);
+  margin: 0.5rem;
+  padding: 1rem;
+}
+.card--juegos card-body {
+  display: flex;
+  height: 100%;
+  position: relative;
+  flex-direction: column;
+  background-color: #fffefe;
+}
+
+.textCard {
+  flex-grow: 1;
+  color: #7a7575;
+}
+
+.title--juegos {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #000000;
+  padding: 0.5rem;
+}
+
+#botonJuegos {
+  font-weight: 800;
+}
+
+/* Puntuación estrellas */
+
+.star-widget label {
+  box-sizing: border-box;
+  cursor: hand;
+  transition: all 0.3seg;
+  font: size 20px;
+  color: #444;
+  padding: 0.75rem;
+  float: right;
+  transition: all 0.2 ease;
+}
+
+.star-widget input {
+  display: none;
+}
+
+.star-widget
+input:checked ~ label,
+input:hover ~ label {
+  color: #ff7a00;
+}
+
+input:hover ~ label {
+  transform: scale(1.2) rotate(-15deg);
+}
+
+.precioTarjeta {
+  display: inline;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 950;
+  margin-right: 5px;
+}
+
+.descripPrecio {
+  color: #939090;
+  font-size: 0.8rem;
+  margin-right: 10px;
+}
+
+.logoNintendoCard {
+  display: inline-block;
+  width: 8%;
+  margin-right: 10px;
+}
+
+.label-top {
+  position: absolute;
+  background-color: #8bc34a;
+  color: #fff;
+  margin: 10px;
+  top: 8px;
+  left: 8px;
+  padding: 5px 10px 5px 10px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.slideTitle3 h5 {
+  color: #ffff;
+}
+/*MODAL*/
+
+.modal-header-nintendo {
+  background-color: #E60012;
+}
+
+.modal-footer-nintendo {
+  background-color: #363636;
+}
+/*ERROR 404*/
+
+#paginaError img {
+  width: 100%;
+  height: 100vh;
+}
+/* CONTACTO y ACERCA DE*/
+
+.ctrol-hover:hover {
+  color: #E60012;
+  cursor: pointer;
+}
+
+.btn-flex-design {
+  display: flex;
+}
+
+.mario_sube {
+  width: 85px;
+  position: fixed;
+  bottom: 20px;
+  right: 1px;
+  z-index: 1;
+}
+
+
+.card-integrantes{
+  background-image: url(../img/consolaVintage.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+}
+
+.color_card {
+  background-color: #cec2c2ea;
+}
+.text-bold {
+  font-weight: bold;
+}
+/*FOOTER*/ 
+footer{
+  background-color: #363636;} 
+footer i {
+  color: rgb(255, 255, 255);
+}
+.listaFooter {
+  list-style: none;
+}
+
+.text-color-copyright {
+  color: #939393;
+}
